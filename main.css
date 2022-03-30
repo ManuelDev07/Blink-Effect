@@ -1,0 +1,18 @@
+span {
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 12ch; /*el width dependerá de la cantidad de caracteres que contenga el span*/
+    animation: typing 2s steps(12),  /*aqui los (12) serán también dependiendo de la cantidad de letras que estén dentro del span*/
+blink .5s infinite step-end alternate;
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from {width: 0}
+}
+
+@keyframes blink {
+    50% {border-color: transparent}
+}
